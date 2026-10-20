@@ -1,0 +1,15 @@
+*
+
+!images/
+!LQR_VMC/
+!robot_feedback_test/
+!robot_vmc_test/
+!README.md
+!cal_lqr_k.m
+
+!images/**
+!LQR_VMC/**
+!robot_feedback_test/**
+!robot_vmc_test/**
+
+!.gitignore

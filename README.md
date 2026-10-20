@@ -9,6 +9,7 @@
 | 作业 | 内容 | 入口 |
 | --- | --- | --- |
 | 第一次作业 | Linux 基础、第一次 C++ 编译与调试、Git 提交 | [01-first-assignment](./01-first-assignment/README.md) |
+| 第二次作业 | ROS2 入门（10 章教程）+ 轮腿机器人 LQR/VMC 平衡控制 | [02-ros2-wheelleg](./02-ros2-wheelleg/README.md) |
 
 第一次作业目录中的文件：
 
@@ -18,6 +19,19 @@
 | [direction.cpp](./01-first-assignment/direction.cpp) | 练习编译和调试的示例程序。 |
 | [password_checker.cpp](./01-first-assignment/password_checker.cpp) | 需要修复的作业起始程序，里面故意保留了错误。 |
 | `.gitignore` | 让 Git 忽略编译产生的程序等临时文件。 |
+
+第二次作业（ROS2）比第一次大得多，是一个完整目录：
+
+| 路径 | 用途 |
+| --- | --- |
+| [02-ros2-wheelleg/README.md](./02-ros2-wheelleg/README.md) | 入口：环境准备、构建自检、学习顺序、作业要求、排错表。 |
+| `02-ros2-wheelleg/Tutorial/ROS2_入门/` | 教程正文（第 00～09 章），**大作业在第 09 章第 5 节**。 |
+| `02-ros2-wheelleg/Tutorial/ros2_ws/` | 示例 ROS2 工作区（6 个包）。**没有** `wheel_leg_controller`，那是你要自己写的。 |
+| `02-ros2-wheelleg/Wheel_Leg/` | 轮腿机器人原工程，**参考用，不要改**。LQR/VMC 的解算代码都在这里。 |
+
+> ⚠️ 第二次作业有个额外的硬性要求：**`ros2_ws` 所在的整条路径不能含中文**（ROS2 的 `rosidl`
+> 处理不了非 ASCII 路径，构建会失败）。所以克隆本仓库时，请放到纯英文目录下，
+> 例如 `mkdir -p ~/venom && cd ~/venom`。详见 [02 的 README](./02-ros2-wheelleg/README.md)。
 
 ## 第一次作业怎么做
 

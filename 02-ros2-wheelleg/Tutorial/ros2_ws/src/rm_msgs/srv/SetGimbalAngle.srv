@@ -1,0 +1,6 @@
+# 设置云台角度（服务）
+float64 yaw
+float64 pitch
+---
+bool success       # 是否成功
+string message     # 附加信息

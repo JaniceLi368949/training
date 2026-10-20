@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>wheel_leg_sim</name>
+  <version>0.0.0</version>
+  <description>轮腿机器人 MuJoCo 仿真节点（纯仿真，不含任何控制律，供作业使用）</description>
+  <maintainer email="rm@example.com">RM Team</maintainer>
+  <license>Apache-2.0</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>rm_msgs</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>   <!-- 仅 publish_clock:=true 时需要 -->
+  <exec_depend>builtin_interfaces</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

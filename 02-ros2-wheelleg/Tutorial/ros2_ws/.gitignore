@@ -1,0 +1,8 @@
+# colcon 构建产物（不要提交）
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
